@@ -21,7 +21,10 @@ putchar(' ');
 putchar(number3);
 putchar(number4);
 if (number1 != 57 || number2 != 56 || number3 != 57 || number4 != 57)
+{
 putchar(',');
+putchar(' ');
+}
 }
 
 }
