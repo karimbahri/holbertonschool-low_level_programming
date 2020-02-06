@@ -14,9 +14,13 @@ int main(void)
 			{
 				putchar(number1);
 				putchar(number2);
-				putchar(',');
-				putchar(' ');
+				if ( (number1 != 56 || number2 != 57) )
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
+	putchar('\n');
 	return (0);
 }
