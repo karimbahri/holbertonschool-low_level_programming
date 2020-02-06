@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - display exception
-*Result: 0
+*Return: 0
 */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 
 	{
 		if (character == 'q' || character == 'e')
-			continue;
+			putchar('');
 		putchar(character);
 	}
 	putchar('\n');
