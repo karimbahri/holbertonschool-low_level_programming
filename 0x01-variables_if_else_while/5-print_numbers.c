@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main : display digits
+*main - display digits
 *Return: 0
 */
 int main(void)
