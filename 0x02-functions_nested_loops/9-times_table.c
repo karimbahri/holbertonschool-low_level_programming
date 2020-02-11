@@ -24,7 +24,9 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
+				if (j)
+					_putchar(' ');
+
 				_putchar(u + '0');
 				checkNumber(j);
 			}
@@ -43,9 +45,8 @@ void checkNumber(int num)
 		_putchar(',');
 		_putchar(' ');
 	}
-	else
+	else if (num == 9)
 	{
-		_putchar('$');
 		_putchar('\n');
 	}
 }
