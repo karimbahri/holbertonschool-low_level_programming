@@ -20,12 +20,13 @@ void times_table(void)
 			{
 				_putchar(d + '0');
 				_putchar(u + '0');
-				checkNumber(j, 0);
+				checkNumber(j);
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(u + '0');
-				checkNumber(j, 1);
+				checkNumber(j);
 			}
 		}
 	}
@@ -34,17 +35,10 @@ void times_table(void)
 /**
 *checkNumber - check num is equal to 9
 *@num: the number to check
-*@state: check that state is true
 */
-void checkNumber(int num, int state)
+void checkNumber(int num)
 {
-	if (num < 9 && state)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-	}
-	else if (num < 9 && !state)
+	if (num < 9)
 	{
 		_putchar(',');
 		_putchar(' ');
