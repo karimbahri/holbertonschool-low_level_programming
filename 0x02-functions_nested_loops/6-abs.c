@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "6-abs.h"
 /**
 *_abs - return the abs of integer
 *@a: integer

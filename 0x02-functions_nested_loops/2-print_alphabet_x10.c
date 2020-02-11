@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "2-print_alphabet_x10.h"
 
 /**
 *print_alphabet_x10 - DisplayAlpha

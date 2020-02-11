@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "5-sign.h"
 
 /**
 *print_sign - check the sign of n

@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "1-alphabet.h"
 
 /**
 *print_alphabet - display alphabet
@@ -10,5 +9,5 @@ void print_alphabet(void)
 
 	for (character = 'a' ; character <= 'z' ; character++)
 		_putchar(character);
-	putchar('\n');
+	_putchar('\n');
 }

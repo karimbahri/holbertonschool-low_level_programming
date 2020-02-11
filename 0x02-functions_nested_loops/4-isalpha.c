@@ -1,4 +1,3 @@
-#include "4-isalpha.h"
 #include "holberton.h"
 /**
 *_isalpha - checks that c is alpha

@@ -1,4 +1,3 @@
-#include "3-islower.h"
 #include "holberton.h"
 /**
 *_islower - checks if the character is lower
