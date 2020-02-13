@@ -17,13 +17,16 @@ int main(void)
 		}
 
 		else if (!(i % 5))
-			printf("Buzz ");
+			printf("Buzz");
 
 		else if (!(i % 3))
-			printf("Fizz ");
+			printf("Fizz");
 
 		else
-			printf("%d ", i);
+			printf("%d", i);
+
+		if (i != 100)
+			printf(" ");
 
 	}
 	printf("\n");
