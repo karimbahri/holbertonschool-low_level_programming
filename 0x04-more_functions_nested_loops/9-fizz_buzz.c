@@ -10,14 +10,17 @@ int main(void)
 
 	for (i = 1 ; i < 101 ; i++)
 	{
-		if (!(i % 3))
-			printf("Fizz ");
+		if (!(i % 3) && !(i % 5))
+		{
+			printf("FizzBuzz ");
+			continue;
+		}
 
 		else if (!(i % 5))
 			printf("Buzz ");
 
-		else if (!(i % 3) && !(i % 5))
-			printf("FizzBuzz ");
+		else if (!(i % 3))
+			printf("Fizz ");
 
 		else
 			printf("%d ", i);
