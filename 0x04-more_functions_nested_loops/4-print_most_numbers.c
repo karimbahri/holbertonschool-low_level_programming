@@ -9,8 +9,9 @@ char character = 0;
 
 for (character = '0' ; character <= '9' ; character++)
 	{
-		if (character != '2' && character != '4')
-			_putchar(character);
+	if (character != '2' && character != '4')
+		_putchar(character);
+
 	}
-	_putchar('\n');
+_putchar('\n');
 }
