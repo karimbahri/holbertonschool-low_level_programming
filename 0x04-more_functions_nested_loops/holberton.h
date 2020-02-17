@@ -14,4 +14,5 @@ void print_triangle(int size);
 void print_number(int n);
 int firstDigit(int n);
 int otherDigits(int n);
+int length(int n);
 #endif
