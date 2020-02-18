@@ -16,7 +16,7 @@ int main(void)
 	printf("%d\n", n);
 	n = _atoi("          ------++++++-----+++++--98");
 	printf("%d\n", n);
-	n = _atoi("214748364");
+	n = _atoi("2147483644545454564654654645654");
 	printf("%d\n", n);
 	n = _atoi("0");
 	printf("%d\n", n);
@@ -24,7 +24,7 @@ int main(void)
 	printf("%d\n", n);
 	n = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
 	printf("%d\n", n);
-	n = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+	n = _atoi("");
 	printf("%d\n", n);
 	return (0);
 }
