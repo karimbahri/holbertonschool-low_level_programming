@@ -16,7 +16,10 @@ char *leet(char *s)
 		for (j = 0 ; j < 5 ; j++)
 		{
 			if (s[i] == character[j] || s[i] == (character[j] - ('a' - 'A')))
+			{
 				s[i] = key[j];
+				break;
+			}
 		}
 		i++;
 	}
