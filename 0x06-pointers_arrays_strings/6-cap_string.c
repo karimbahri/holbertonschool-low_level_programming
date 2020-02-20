@@ -9,7 +9,7 @@ char *cap_string(char *s)
 {
 	int i = 0, length = _strlen(s);
 
-	for (i = 0 ; i < length ; i++)
+	for (i = 0 ; i <= length ; i++)
 	{
 		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'
 		|| s[i] == ',' || s[i] == ';' ||
