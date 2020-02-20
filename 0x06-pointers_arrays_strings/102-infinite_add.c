@@ -11,6 +11,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		{
 			r[size_r - i] = (sum % 10) + '0';
 			r[size_r - i - 1] = (sum / 10) + '0';
+			i++;
 		}
 		else
 			r[size_r - i] = sum + '0';
