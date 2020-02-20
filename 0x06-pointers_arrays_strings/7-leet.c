@@ -8,17 +8,14 @@
 char *leet(char *s)
 {
 	int i = 0, j = 0, length = _strlen(s);
-	char key[] = {4, 3, 0, 7, 1}, character[] = {'a', 'e', 'o', 't', 'l'};
+	char key[] = {'4', '3', '0', '7', '1'}, character[] = {'a', 'e', 'o', 't', 'l'};
 
 	for (i = 0 ; i < length ; i++)
 	{
 		for (j = 0 ; j < 5 ; j++)
 		{
 			if (s[i] == character[j] || s[i] == (character[j] - ('a' - 'A')))
-			{
-				s[i] = key[j] + '0';
-				break;
-			}
+				s[i] = key[j];
 		}
 	}
 
