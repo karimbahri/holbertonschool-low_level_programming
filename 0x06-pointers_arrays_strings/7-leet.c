@@ -17,7 +17,7 @@ char *leet(char *s)
 			if (s[i] == character[j] || s[i] == (character[j] - ('a' - 'A')))
 			{
 				s[i] = key[j] + '0';
-				continue;
+				break;
 			}
 		}
 	}
