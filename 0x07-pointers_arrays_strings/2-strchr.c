@@ -2,7 +2,7 @@
 
 /**
  * _strchr - locate character in stirng
- * @s: string 
+ * @s: string
  * @c: character
  * Return: pointer to the first occurrence of the character c
  */
