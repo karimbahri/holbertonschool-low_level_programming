@@ -12,9 +12,9 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
-		char begin[] = haystack, subStr[] = needle;
+		char *begin = haystack, *subStr = needle;
 
-		while (*haystack && *subStr && haystack == subStr)
+		while (*haystack && *subStr && *haystack == *subStr)
 		{
 			haystack++;
 			subStr++;
@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 		if (!*subStr)
 			return (begin);
 
-		*haystack = begin + 1;
+		haystack = begin + 1;
 
 	}
 	return (NULL);
