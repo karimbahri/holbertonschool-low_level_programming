@@ -21,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		if (!*subStr)
-			return begin;
+			return (begin);
 
 		*haystack = begin + 1;
 
