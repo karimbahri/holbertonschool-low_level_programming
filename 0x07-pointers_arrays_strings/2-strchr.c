@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * _strchr - locate character in stirng
@@ -16,6 +17,6 @@ char *_strchr(char *s, char c)
 			return (&s[i]);
 	}
 
-	return (0);
+	return (NULL);
 
 }
