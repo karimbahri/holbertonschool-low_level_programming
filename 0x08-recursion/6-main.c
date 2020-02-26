@@ -20,7 +20,7 @@ int main(void)
     printf("%d\n", r);
     r = is_prime_number(25);
     printf("%d\n", r);
-    r = is_prime_number(-1);
+    r = is_prime_number(15);
     printf("%d\n", r);
     r = is_prime_number(113);
     printf("%d\n", r);
