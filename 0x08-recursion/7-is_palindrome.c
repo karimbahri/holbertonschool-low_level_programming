@@ -9,8 +9,10 @@ int is_palindrome(char *s)
 {
 	int length = _strlen_recursion(s), pos = (length / 2) + 1;
 
-	if (length % 2)
+	if (length % 2 && length != 3)
 		pos++;
+	if (length <= 2)
+		pos--;
 
 	if (!*s)
 		return (1);

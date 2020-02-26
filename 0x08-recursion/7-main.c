@@ -10,7 +10,7 @@ int main(void)
 {
     int r;
 
-    r = is_palindrome("oevel");
+    r = is_palindrome("760");
     printf("%d\n", r);
     r = is_palindrome("redder");
     printf("%d\n", r);
