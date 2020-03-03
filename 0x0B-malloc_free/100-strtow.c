@@ -62,7 +62,12 @@ int getNumbWords(char *str)
 
 	return (number);
 }
-
+/**
+ * get_length_word - get the length of word
+ * @str: string to count
+ * @pos: current position
+ * Return: length
+ */
 int get_length_word(char *str, int *pos)
 {
 	int length = 0;
