@@ -12,4 +12,7 @@ int **alloc_grid(int width, int height);
 void free_grid(int **grid, int height);
 char *argstostr(int ac, char **av);
 int get_length(char **av, int ac);
+char **strtow(char *str);
+int getNumbWords(char *str);
+int get_length_word(char *str, int *pos);
 #endif
