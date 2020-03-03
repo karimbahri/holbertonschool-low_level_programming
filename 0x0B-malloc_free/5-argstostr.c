@@ -49,6 +49,7 @@ int get_length(char **av, int ac)
 
 	for (i = 0 ; i < ac ; i++)
 	{
+		j = 0;
 		while (av[i][j])
 			length++, j++;
 
