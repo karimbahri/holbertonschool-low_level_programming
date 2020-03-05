@@ -10,6 +10,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *dynamic_array;
+	char *ptr;
+	int i = 0;
 
 	if (!nmemb || !size)
 		return (NULL);
@@ -18,6 +20,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (!dynamic_array)
 		return (NULL);
+
+	ptr = dynamic_array;
+
+	for (i = 0 ; i < (int) nmemb ; i++)
+		ptr[i] = 0;
 
 	return (dynamic_array);
 }
