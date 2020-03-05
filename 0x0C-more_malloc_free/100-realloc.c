@@ -1,6 +1,13 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+/**
+ * _realloc - reserve new spaces of memory for an existing array
+ * @ptr: existing array
+ * @old_size: size of ptr
+ * @new_size: size of the new array
+ * Return: dynamic array
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 
@@ -29,7 +36,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	return (dynamic_array);
 }
 
-
+/**
+ * set_memory - copy the containing of src into array
+ * @array: destination
+ * @src: source
+ * @new_size: new size
+ * @old_size: old size
+ */
 void set_memory(char *array, char *src, int new_size, int old_size)
 {
 	int i = 0;
