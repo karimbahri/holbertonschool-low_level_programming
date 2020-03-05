@@ -47,7 +47,7 @@ void set_memory(char *array, char *src, int new_size, int old_size)
 {
 	int i = 0;
 
-	while (!(i > old_size) && !(i > new_size))
+	while (!(i + 1 > old_size) && !(i + 1 > new_size))
 	{
 		array[i] = src[i];
 		i++;
