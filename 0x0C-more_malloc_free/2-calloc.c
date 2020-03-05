@@ -10,8 +10,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *dynamic_array;
-	char *ptr;
-	int i = 0;
 
 	if (!nmemb || !size)
 		return (NULL);
@@ -21,10 +19,25 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!dynamic_array)
 		return (NULL);
 
-	ptr = dynamic_array;
+	_memset(dynamic_array, 0, nmemb);
 
-	for (i = 0 ; i < (int) nmemb ; i++)
-		ptr[i] = 0;
+	return (dynamic_array);
+}
 
-	return (ptr);
+
+/**
+ * _memset - fills the memory with constant byte character
+ * @s: string
+ * @b: the character
+ * @n: number of the characters
+ * Return: string modified
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i = 0;
+
+	for (i = 0 ; i < n ; i++)
+		s[i] = b;
+
+	return (s);
 }
