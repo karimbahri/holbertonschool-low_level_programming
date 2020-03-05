@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!dynamic_array)
 		return (NULL);
 
-	_memset(dynamic_array, 0, nmemb);
+	_memset(dynamic_array, 0, nmemb * size);
 
 	return (dynamic_array);
 }
