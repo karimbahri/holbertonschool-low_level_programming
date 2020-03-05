@@ -8,12 +8,14 @@
  * @argv: array
  * Return: 0
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+	printf("%d\n", atoi(argv[1]));
 	return (0);
 }
