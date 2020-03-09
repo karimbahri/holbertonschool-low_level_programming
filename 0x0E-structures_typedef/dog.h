@@ -1,7 +1,10 @@
 #ifndef Django
 #define Django
 /*--------------------------------STRUCTS-----------------------------------*/
-
+/**
+ * dog_t - an alias of struct dog
+ */
+typedef struct dog dog_t;
 /**
  * struct dog - variable of type dog
  * @name: dog's name
