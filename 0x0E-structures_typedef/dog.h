@@ -1,7 +1,7 @@
 #ifndef Django
 #define Django
 /**
- * dog - variable of type dog
+ * struct dog - variable of type dog
  * @name: dog's name
  * @owner: dog's owner name
  * @age: dog's age
