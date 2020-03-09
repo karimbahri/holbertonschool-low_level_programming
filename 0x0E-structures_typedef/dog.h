@@ -1,5 +1,7 @@
 #ifndef Django
 #define Django
+/*--------------------------------STRUCTS-----------------------------------*/
+
 /**
  * struct dog - variable of type dog
  * @name: dog's name
@@ -13,4 +15,8 @@ struct dog
 	char *owner;
 	float age;
 };
+
+/*-------------------------------PROTOTYPES---------------------------------*/
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
