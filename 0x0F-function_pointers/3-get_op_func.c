@@ -20,16 +20,13 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	if (strlen(s) == 1)
-	{
 		while (ops[i].op)
 		{
-			if (ops[i].op[0] == *s)
+			if (ops[i].op[0] == *s && strlen(s) == 1)
 				return (ops[i].f);
 
 			i++;
 
 		}
-	}
 	EXIT_WITH_ERROR(99);
 }
