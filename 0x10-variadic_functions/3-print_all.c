@@ -37,8 +37,10 @@ void print_float(va_list list_of_variables)
 void print_str(va_list list_of_variables)
 {
 	if (!list_of_variables)
+	{
 		printf("(nil)");
-	else
+		return;
+	}
 		printf("%s", va_arg(list_of_variables, char*));
 }
 
