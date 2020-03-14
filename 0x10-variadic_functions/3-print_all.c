@@ -36,6 +36,9 @@ void print_float(va_list list_of_variables)
  */
 void print_str(va_list list_of_variables)
 {
+	if (!list_of_variables)
+		printf("(nil)");
+	else
 		printf("%s", va_arg(list_of_variables, char*));
 }
 
@@ -47,6 +50,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0;
 	va_list list_of_variables;
+	char *sep = "";
 	TYPES t[5] = {{'c', print_char}, {'i', print_int},
 					{'f', print_float}, {'s', print_str},
 					{0, NULL} };
@@ -58,9 +62,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == t[j].type_format)
 			{
-				if (i)
-					printf(", ");
+				printf("%s", sep);
 				t[j].print_type(list_of_variables);
+				sep = ", ";
 				break;
 			}
 			j++;
