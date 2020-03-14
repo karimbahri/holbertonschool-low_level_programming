@@ -7,7 +7,7 @@ main:
 		mov rax, 1
 		mov rdi, 1
 		mov rsi, txt
-		mov rdx, 17
+		mov rdx, length
 		syscall
 
 		mov rax, 60
@@ -17,3 +17,4 @@ main:
 section .rodata
 
 	txt: db "Hello, Holberton", 10
+	length: equ $ - txt
