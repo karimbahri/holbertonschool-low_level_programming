@@ -44,6 +44,7 @@ void print_all(const char * const format, ...)
 		if (is_type && format[i + 1])
 			printf(", ");
 		i++;
+		is_type = TRUE;
 	}
 	NEWLINE;
 	va_end(list_of_variables);
