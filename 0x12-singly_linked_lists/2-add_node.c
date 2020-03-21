@@ -17,11 +17,10 @@ list_t *add_node(list_t **head, const char *str)
 		if (!node || !str)
 			return (NULL);
 
-		node->str = strdup(str);
-		if (!node->str)
-			return (NULL);
+	node->str = strdup(str);
 
 	node->len = _strlen(str);
+
 
 	node->next = *head;
 	*head = node;
