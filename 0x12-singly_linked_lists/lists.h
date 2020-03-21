@@ -1,6 +1,9 @@
 #ifndef __LINKED_L
 #define __LINKED_L
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /*----------------------------STRUCTS----------------------------*/
 
 /**
