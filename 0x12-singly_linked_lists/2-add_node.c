@@ -24,10 +24,28 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 	}
 
-	node->len = strlen(str);
+	node->len = _strlen(str);
 
 	node->next = *head;
 	*head = node;
 
 	return (node);
 }
+
+/**
+ * _strlen - return the length of a string
+ * @s: the string to check
+ * Return: lenght
+ */
+int _strlen(const char *s)
+{
+	int length = 0;
+
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+
+	return (length);
+}
+
