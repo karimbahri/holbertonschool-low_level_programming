@@ -18,3 +18,4 @@ main:
 section .rodata
 
 	txt: db "Hello, Holberton"
+	format: db "%s", 10, 0
