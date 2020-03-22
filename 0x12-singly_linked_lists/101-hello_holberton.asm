@@ -1,15 +1,13 @@
-extern printf
+
+section .text
+	extern printf
+	program
 
 global main
 
-section .text
-
-	program
-
 main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, txt
+	mov esi, txt
+	mov edi, format
 	call printf
 	
 	mov rax, 60
