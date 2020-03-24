@@ -11,14 +11,15 @@ size_t print_listint_safe(const listint_t *head)
 {
 
 	size_t size = 0;
-	const listint_t *node = h;
+	const listint_t *node = head;
 
 	if (!node)
 		exit(98);
 
 	while (node)
 	{
-		printf("[%p] %d\n", node, node->n);
+
+		printf("%d\n", node->n);
 		node = node->next;
 		size++;
 	}
