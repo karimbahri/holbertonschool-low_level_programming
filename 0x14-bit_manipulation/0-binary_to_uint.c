@@ -36,7 +36,7 @@ unsigned int binary_to_uint(const char *b)
  * @b: second number
  * Return: a ^ b
  */
-unsigned int power(unsigned int a, unsigned int b)
+unsigned long int power(unsigned int a, unsigned int b)
 {
 	unsigned int i = 0, tmp = a;
 
