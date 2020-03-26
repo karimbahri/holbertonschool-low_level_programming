@@ -13,4 +13,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int number_of_bit(unsigned long int number);
 int _putchar(char c);
 void print_binary(unsigned long int n);
+int get_endianness(void);
 #endif
