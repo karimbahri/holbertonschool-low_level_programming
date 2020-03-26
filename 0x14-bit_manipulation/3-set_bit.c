@@ -10,7 +10,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	if (index > 31)
+	if (index > ULI_MAX)
 		return (-1);
 
 	*n = *n | 1 << index;

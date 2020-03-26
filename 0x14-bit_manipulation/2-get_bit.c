@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int number = power(2, index), result;
 
-	if (index > 31)
+	if (index > ULI_MAX)
 		return (-1);
 
 	result = number & n;
