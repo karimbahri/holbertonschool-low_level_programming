@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 	if (destination_file_d == -1)
 		exitWithError("Error: Can't write to", argv[2], 99);
 
-	while ((nb_R = read(source_file_d, buffer, 1024)) > 0)
+	while ((nb_R = read(source_file_d, buffer, 1024)))
 	{
 		if (nb_R == -1)
 			exitWithError("Error: Can't read from file", argv[1], 98);
