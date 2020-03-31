@@ -50,14 +50,13 @@ int main(int argc, char *argv[])
 	if (destination_file_d == -1)
 		exitWithError("Error: Can't write to", argv[2], 99);
 
-	while ((nb_R = read(source_file_d, buffer, 1024)))
+	while ((nb_R = read(source_file_d, buffer, 1024)) > 0)
 	{
-		if (nb_R == -1)
-			exitWithError("Error: Can't read from file", argv[1], 98);
 		if (write(destination_file_d, buffer, nb_R) == -1)
 			exitWithError("Error: Can't write to", argv[2], 99);
 	}
-
+	if (nb_R == -1)
+		exitWithError("Error: Can't read from file", argv[1], 98);
 	if (close(source_file_d) == -1)
 	{
 		dprintf(2, "Error: Can't close fd %d\n", source_file_d);
