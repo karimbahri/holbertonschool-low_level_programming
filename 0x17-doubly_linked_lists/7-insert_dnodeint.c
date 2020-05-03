@@ -31,9 +31,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			if (!node)
 				return (NULL);
 
-			pos_list->prev->next = node;
 			node->prev = pos_list->prev;
 			node->next = pos_list;
+			pos_list->prev->next = node;
 			pos_list->prev = node;
 			node->n = n;
 			return (node);
