@@ -8,7 +8,12 @@
  */
 int main(void)
 {
-	char passwd[] = "dddddddddddddddddddddddddddH";
-	printf("%s", passwd);
+	char *passwd[] = {"dddddddddddddddddddddddddddH", "}}}}}}}}}}}}}}}}}}}}}KH", "K}}}}}}}}}}}}}}}}}}}}}H", 
+	"H}}}}}}}}}}}}}}}}}}}}}K", "ddddddddddddddddddddHddddddd", "ddddddddddddddddddddHddddddd", "}}}K}}}}}}}}}}}}}}}}}}H"};
+	int nbRand = 0;
+	srand(time(NULL));
+
+	nbRand = rand() % 7;
+	printf("%s", passwd[nbRand]);
 	return (0);
 }
