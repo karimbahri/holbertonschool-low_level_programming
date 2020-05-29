@@ -17,16 +17,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (!ht || !key || !value)
 		return (FALSE);
-
 	if (!*key)
 		return (FALSE);
 
 	index = key_index((const unsigned char *)key, ht->size);
-
 	if (!ht->array)
 		return (FALSE);
 
-	
 	if (!ht->array[index])
 	{
 		node = malloc(sizeof(hash_node_t));
@@ -36,7 +33,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (insert_noCol(ht, node, index, (char *)key, (char *)value));
 	}
 	node = ht->array[index];
-
 	while (node)
 	{
 		if (!strcmp(node->key, key))
@@ -50,15 +46,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!node)
 	{
 		node = malloc(sizeof(hash_node_t));
-
 		if (!node)
 			return (FALSE);
 
-		node->value = strdup(value);
-		node->key = strdup(key);
-		node->next = ht->array[index];
-		ht->array[index] = node;
-		return (TRUE);
+		return (insert_Col(ht, node, index, (char *)key, (char *)value));
 	}
 	return (TRUE);
 }
@@ -77,6 +68,24 @@ int insert_noCol(ht_t *ht, hn_t *node, size_t index, char *key, char *value)
 	node->key = strdup(key);
 	node->value = strdup(value);
 	node->next = NULL;
+	ht->array[index] = node;
+	return (TRUE);
+}
+
+/**
+ * insert_Col - insert element in hash table in case of collision
+ * @ht: hash table
+ * @node: node
+ * @index: index
+ * @key: key
+ * @value: value
+ * Return: 1 if true 0 otherwise
+ */
+int insert_Col(ht_t *ht, hn_t *node, size_t index, char *key, char *value)
+{
+	node->value = strdup(value);
+	node->key = strdup(key);
+	node->next = ht->array[index];
 	ht->array[index] = node;
 	return (TRUE);
 }

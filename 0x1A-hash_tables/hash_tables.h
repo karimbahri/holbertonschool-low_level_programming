@@ -45,6 +45,7 @@ unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 int insert_noCol(ht_t *ht, hn_t *node, size_t index, char *key, char *value);
+int insert_Col(ht_t *ht, hn_t *node, size_t index, char *key, char *value);
 /*-----------------------FUNCTIONS-----------------------*/
 
 #endif
