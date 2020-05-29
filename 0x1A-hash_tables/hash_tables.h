@@ -47,6 +47,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 int insert_noCol(ht_t *ht, hn_t *node, size_t index, char *key, char *value);
 int insert_Col(ht_t *ht, hn_t *node, size_t index, char *key, char *value);
 char *hash_table_get(const hash_table_t *ht, const char *key);
+void hash_table_print(const hash_table_t *ht);
 /*-----------------------FUNCTIONS-----------------------*/
 
 #endif
