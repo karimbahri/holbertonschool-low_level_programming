@@ -4,4 +4,4 @@ SRC main.c holberton.c
 all : holberton
 
 holberton : SRC
-	CC SRC -o holberton
+	$(CC) $(SRC) -o holberton
